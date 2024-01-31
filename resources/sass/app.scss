@@ -8,8 +8,9 @@
 @import "bootstrap/scss/bootstrap";
 
 .Dashboard-heading {
-    padding-left: 5%;
+    // padding-left: 5%;
 }
+
 .my-items {
     margin: 5% 0;
     // font-family: Manrope;
@@ -20,12 +21,14 @@
     letter-spacing: 0.88px;
     text-transform: uppercase;
 }
+
 .sidebar-styling {
     background-color: #f8f9fa; // A light gray background color
     border-right: 1px solid #dee2e6; // A border to the right of the sidebar
 
     .nav-link {
         color: #333; // Darker text color for better contrast
+
         &:hover {
             color: #007bff; // Bootstrap primary color on hover
             background-color: #e8e8e8; // Light background on hover
@@ -36,6 +39,7 @@
         color: #fff; // White text for active link
         background-color: #141a21; // Bootstrap primary color for active link
     }
+
     /* For small screens */
     @media (max-width: 768px) {
         /* Your CSS styles for small screens */
@@ -50,4 +54,56 @@
     @media (min-width: 993px) {
         /* Your CSS styles for large screens */
     }
+}
+
+.chart2Holder {
+    max-width: 70%;
+    margin: auto;
+}
+
+.chart1Holder {
+    max-width: 70%;
+    margin: auto;
+}
+
+.blogLabel {
+    color: #422A3C;
+    font-family: Lora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 1rem 0;
+
+    /* 104.167% */
+}
+
+.blogHeading {
+    color: #422A3C;
+    font-family: "Playfair Display";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 86.4px */
+    /* 104.167% */
+}
+
+.BlogSubmitBtn {
+    border-radius: 5px;
+    background: #A75E5B;
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 1rem 0;
+    /* 150% */
+}
+
+.rowBlogWrapper {
+    padding: 0 4%;
 }

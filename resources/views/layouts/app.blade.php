@@ -125,76 +125,76 @@
 </body>
 
 <style>
-/* Custom styles for the navigation bar */
-.navbar {
-    /* border-radius: 50px; */
-    margin-left: 20%;
-    /* margin-right: 5%; */
-    /* margin-top: 10px; */
-    padding: 10px 0;
-    background-color: #A75E5B;
-    /* Change to your desired color */
-    z-index: 0;
-}
+    /* Custom styles for the navigation bar */
+    .navbar {
+        /* border-radius: 50px; */
+        /* margin-left: 20%; */
+        /* margin-right: 5%; */
+        /* margin-top: 10px; */
+        padding: 10px 0;
+        background-color: #A75E5B;
+        /* Change to your desired color */
+        z-index: 0;
+    }
 
-.logo-med {
-    width: 150px !important;
-    text-align: center;
-}
+    .logo-med {
+        width: 200px !important;
+        text-align: center;
+    }
 
-.navbar-toggler-icon {
-    color: #fff;
-}
+    .navbar-toggler-icon {
+        color: #fff;
+    }
 
-.navbar-nav li.nav-item {
-    margin-right: 10px;
-}
+    .navbar-nav li.nav-item {
+        margin-right: 10px;
+    }
 
-.navbar-nav li.nav-item a.nav-link {
-    font-size: 18px;
-    color: #fff;
-    transition: color 0.3s;
-}
+    .navbar-nav li.nav-item a.nav-link {
+        font-size: 18px;
+        color: #fff;
+        transition: color 0.3s;
+    }
 
-.navbar-nav li.nav-item a.nav-link:hover {
-    color: #ccc;
-}
+    .navbar-nav li.nav-item a.nav-link:hover {
+        color: #ccc;
+    }
 
-/* Style the dropdown menu */
-.dropdown-menu {
-    background-color: #fff;
-    border: none;
-}
+    /* Style the dropdown menu */
+    .dropdown-menu {
+        background-color: #fff;
+        border: none;
+    }
 
-.dropdown-item {
-    color: #333;
-}
+    .dropdown-item {
+        color: #333;
+    }
 
-.dropdown-item:hover {
-    background-color: #f0f0f0;
-    color: #333;
-}
+    .dropdown-item:hover {
+        background-color: #f0f0f0;
+        color: #333;
+    }
 
-/* Sidebar styles */
-.sidebar {
-    width: 280px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background-color: #402524 !important;
-    color: #fff;
-}
+    /* Sidebar styles */
+    .sidebar {
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        background-color: #402524 !important;
+        color: #fff;
+    }
 
-.sidebar a {
-    color: #fff;
-    text-decoration: none;
-}
+    .sidebar a {
+        color: #fff;
+        text-decoration: none;
+    }
 
-.sidebar a:hover {
-    color: #ccc;
-}
+    .sidebar a:hover {
+        color: #ccc;
+    }
 </style>
 
 </html>

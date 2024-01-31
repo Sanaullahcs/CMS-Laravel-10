@@ -5,26 +5,26 @@
 @section('content')
 <div class="Dashboard-heading">
     <!-- <h1>products</h1> -->
-    <div class="container mt-5">
+    <div class="container rowBlogWrapper mt-5">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-center mb-4">Upload a Product</h2>
+            <div class="col">
+                <h2 class="text-center mb-4 blogHeading">Upload a Product</h2>
                 <form>
                     <!-- Product Name Input -->
                     <div class="form-group">
-                        <label for="productName">Product Name</label>
+                        <label class="blogLabel" for="productName">Product Name</label>
                         <input type="text" class="form-control" id="productName" name="productName" required>
                     </div>
 
                     <!-- Price Input -->
                     <div class="form-group">
-                        <label for="price">Price</label>
+                        <label class="blogLabel" for="price">Price</label>
                         <input type="text" class="form-control" id="price" name="price" required>
                     </div>
 
                     <!-- Description Input -->
                     <div class="form-group">
-                        <label for="description">Description</label>
+                        <label class="blogLabel" for="description">Description</label>
                         <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
                     </div>
 
@@ -50,7 +50,7 @@
                     </div>
 
                     <!-- Submit Button -->
-                    <button type="submit" class="btn btn-primary">Upload Product</button>
+                    <button type="submit" class="btn BlogSubmitBtn">Upload Product</button>
                 </form>
             </div>
         </div>
