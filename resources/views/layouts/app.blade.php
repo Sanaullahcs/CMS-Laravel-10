@@ -15,8 +15,9 @@
 </head>
 
 <body>
+
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-medspa shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark  shadow-sm">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -29,32 +30,32 @@
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
+                        @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                        @endif
+                        @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                        @endif
                         @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }}
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
+                        </li>
                         @endguest
                     </ul>
                 </div>
@@ -65,35 +66,35 @@
             <div class="row">
                 <!-- Sidebar -->
                 @auth
-                    <div class="sidebar d-md-block bg-dark">
-                        <a href="#" class="d-flex align-items-center text-white text-decoration-none mb-4">
-                            <img src="https://via.placeholder.com/40" alt="Your Logo" class="me-2">
-                            <span class="fs-4">Your Logo</span>
-                        </a>
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a href="{{ url('/admin/dashboard') }}" class="nav-link text-white">
-                                    <i class="fas fa-tachometer-alt me-2"></i> Dashboard
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ url('/admin/blogs') }}" class="nav-link text-white">
-                                    <i class="fas fa-blog me-2"></i> Blogs
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ url('/admin/gallery') }}" class="nav-link text-white">
-                                    <i class="fas fa-image me-2"></i> Gallery
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="{{ url('/admin/services') }}" class="nav-link text-white">
-                                    <i class="fas fa-cogs me-2"></i> Services
-                                </a>
-                            </li>
-                            <!-- Add more sidebar links here -->
-                        </ul>
-                    </div>
+                <div class="sidebar d-md-block bg-dark">
+                    <a href="#"
+                        class="d-flex align-items-center justify-content-center text-white text-decoration-none mb-4">
+                        <img src="{{ asset('images/medspalogo.png') }}" alt="Your Logo" class="me-2 logo-med">
+                    </a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a href="{{ url('/admin/dashboard') }}" class="nav-link text-white">
+                                <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/admin/blogs') }}" class="nav-link text-white">
+                                <i class="fas fa-blog me-2"></i> Blogs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/admin/gallery') }}" class="nav-link text-white">
+                                <i class="fas fa-image me-2"></i> Gallery
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ url('/admin/services') }}" class="nav-link text-white">
+                                <i class="fas fa-cogs me-2"></i> Services
+                            </a>
+                        </li>
+                        <!-- Add more sidebar links here -->
+                    </ul>
+                </div>
                 @endauth
 
                 <!-- Main Content -->
@@ -109,67 +110,76 @@
 </body>
 
 <style>
-    /* Custom styles for the navigation bar */
-    .navbar {
-        padding: 10px 0;
-        background-color: #4285f4;
-        /* Change to your desired color */
-        z-index: 1000;
-    }
+/* Custom styles for the navigation bar */
+.navbar {
+    border-radius: 50px;
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color: #A75E5B;
+    /* Change to your desired color */
+    z-index: 0;
+}
 
-    .navbar-toggler-icon {
-        color: #fff;
-    }
+.logo-med {
+    width: 150px !important;
+    text-align: center;
+}
 
-    .navbar-nav li.nav-item {
-        margin-right: 10px;
-    }
+.navbar-toggler-icon {
+    color: #fff;
+}
 
-    .navbar-nav li.nav-item a.nav-link {
-        font-size: 18px;
-        color: #fff;
-        transition: color 0.3s;
-    }
+.navbar-nav li.nav-item {
+    margin-right: 10px;
+}
 
-    .navbar-nav li.nav-item a.nav-link:hover {
-        color: #ccc;
-    }
+.navbar-nav li.nav-item a.nav-link {
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s;
+}
 
-    /* Style the dropdown menu */
-    .dropdown-menu {
-        background-color: #fff;
-        border: none;
-    }
+.navbar-nav li.nav-item a.nav-link:hover {
+    color: #ccc;
+}
 
-    .dropdown-item {
-        color: #333;
-    }
+/* Style the dropdown menu */
+.dropdown-menu {
+    background-color: #fff;
+    border: none;
+}
 
-    .dropdown-item:hover {
-        background-color: #f0f0f0;
-        color: #333;
-    }
+.dropdown-item {
+    color: #333;
+}
 
-    /* Sidebar styles */
-    .sidebar {
-        width: 280px;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        background-color: #333;
-        color: #fff;
-    }
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
 
-    .sidebar a {
-        color: #fff;
-        text-decoration: none;
-    }
+/* Sidebar styles */
+.sidebar {
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #402524 !important;
+    color: #fff;
+}
 
-    .sidebar a:hover {
-        color: #ccc;
-    }
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #ccc;
+}
 </style>
 
 </html>
