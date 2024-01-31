@@ -1,13 +1,25 @@
 // Fonts
-@import url('https://fonts.bunny.net/css?family=Nunito');
+@import url("https://fonts.bunny.net/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import 'bootstrap/scss/bootstrap';
+@import "bootstrap/scss/bootstrap";
 
-
+.Dashboard-heading {
+    padding-left: 5%;
+}
+.my-items {
+    margin: 5% 0;
+    // font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.88px;
+    text-transform: uppercase;
+}
 .sidebar-styling {
     background-color: #f8f9fa; // A light gray background color
     border-right: 1px solid #dee2e6; // A border to the right of the sidebar
@@ -25,18 +37,17 @@
         background-color: #141a21; // Bootstrap primary color for active link
     }
     /* For small screens */
-@media (max-width: 768px) {
-    /* Your CSS styles for small screens */
-}
+    @media (max-width: 768px) {
+        /* Your CSS styles for small screens */
+    }
 
-/* For medium screens */
-@media (min-width: 769px) and (max-width: 992px) {
-    /* Your CSS styles for medium screens */
-}
+    /* For medium screens */
+    @media (min-width: 769px) and (max-width: 992px) {
+        /* Your CSS styles for medium screens */
+    }
 
-/* For large screens */
-@media (min-width: 993px) {
-    /* Your CSS styles for large screens */
-}
-
+    /* For large screens */
+    @media (min-width: 993px) {
+        /* Your CSS styles for large screens */
+    }
 }
