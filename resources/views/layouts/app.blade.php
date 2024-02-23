@@ -72,39 +72,39 @@
                         <img src="{{ asset('images/medspalogo.png') }}" alt="Your Logo" class="me-2 logo-med">
                     </a>
                     <ul class="nav flex-column">
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/dashboard') ? 'active' : '' }}>
                             <a href="{{ url('/admin/dashboard') }}" class="nav-link text-white">
                                 <i class="fas fa-tachometer-alt me-2"></i> Dashboard
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/blogs') ? 'active' : '' }}>
                             <a href="{{ url('/admin/blogs') }}" class="nav-link text-white">
                                 <i class="fas fa-blog me-2"></i> Blogs
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/gallery') ? 'active' : '' }}>
                             <a href="{{ url('/admin/gallery') }}" class="nav-link text-white">
                                 <i class="fas fa-image me-2"></i> Gallery
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/services') ? 'active' : '' }}>
                             <a href="{{ url('/admin/services') }}" class="nav-link text-white">
                                 <i class="fas fa-cogs me-2"></i> Services
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/about') ? 'active' : '' }}>
                             <a href="{{ url('/admin/about') }}" class="nav-link text-white">
-                                <i class="fas fa-cogs me-2"></i> About
+                                <i class="fas fa-info-circle me-2"></i> About
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/products') ? 'active' : '' }}>
                             <a href="{{ url('/admin/products') }}" class="nav-link text-white">
-                                <i class="fas fa-cogs me-2"></i> Products
+                                <i class="fas fa-shopping-cart me-2"></i> Products
                             </a>
                         </li>
-                        <li class="nav-item my-items">
+                        <li class="nav-item my-items" {{ Request::is('admin/pricing') ? 'active' : '' }}>
                             <a href="{{ url('/admin/pricing') }}" class="nav-link text-white">
-                                <i class="fas fa-cogs me-2"></i> Pricing
+                                <i class="fas fa-dollar-sign me-2"></i> Pricing
                             </a>
                         </li>
                         <!-- Add more sidebar links here -->

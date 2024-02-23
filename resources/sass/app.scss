@@ -107,3 +107,10 @@
 .rowBlogWrapper {
     padding: 0 4%;
 }
+
+li[active] {
+    background-color: #A75E5B;
+    color: #fff;
+    padding: 10px;
+    border-radius: 14px;
+}
