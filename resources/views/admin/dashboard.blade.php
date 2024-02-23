@@ -3,14 +3,15 @@
 @section('content')
 <div class="Dashboard-heading">
     <div class='row rowBlogWrapper'>
+        <h2 class="text-left mb-4 blogHeading">Welcome to Dashboard</h2>
         <div class='col-6'>
             <div class="chart1Holder">
-            <canvas id="myChart" width="400" height="400"></canvas>
+                <canvas id="myChart" width="400" height="400"></canvas>
             </div>
         </div>
         <div class='col-6'>
             <div class="chart2Holder">
-            <canvas id="myDoughnutChart" width="400" height="400"></canvas>
+                <canvas id="myDoughnutChart" width="400" height="400"></canvas>
             </div>
         </div>
 
@@ -31,7 +32,7 @@
             label: "My First Dataset",
             data: [65, 59, 80, 81, 56],
             fill: false,
-            borderColor: "rgb(75, 192, 192)",
+            borderColor: "#482B2A",
             tension: 0.1
         }]
     };
@@ -55,11 +56,10 @@
 <!-- JavaScript code for the doughnut chart -->
 <script>
     var dataDoughnut = {
-        labels: ["Red", "Blue", "Yellow"],
         datasets: [{
             data: [300, 50, 100],
-            backgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
-            hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"]
+            backgroundColor: ["#482B2A", "#402524", "#A75E5B"],
+            hoverBackgroundColor: ["#482B2A", "#402524", "#A75E5B"]
         }]
     };
 
